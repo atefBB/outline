@@ -26,12 +26,12 @@ if (element) {
         <ErrorBoundary>
           <DndProvider backend={HTML5Backend}>
             <Router>
-              <>
+              <React.Fragment>
                 <ScrollToTop>
                   <Routes />
                 </ScrollToTop>
                 <Toasts />
-              </>
+              </React.Fragment>
             </Router>
           </DndProvider>
         </ErrorBoundary>
